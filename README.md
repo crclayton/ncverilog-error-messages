@@ -27,6 +27,8 @@ ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)]
 
 **ncvlog: \*E,NOPSOM:** Similar problem to MEMDNI.
 
+**halsynth: \*E,CLKENF:** You should do a conditional check on whatever's in your sensitivity list before something else. Often this is just because you're checking `sync_reset` before `async_reset` even though `negedge async_reset` is in your sensitivity list.
+
 ### Non-errors that cause problems:
 
 X values in a multi-dimensional packed array: are you sure the array is large enough? If you index off the end, it is neither a compile time error nor a runtime error. It "works", but gives you Xs.
