@@ -30,7 +30,9 @@ ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)]
 
 **ncvlog: \*E,SVNIMP:** SystemVerilog construct not yet implemented:  nested program -- I'm unsure what that mean by nested, since this error occurs even when you try to write a program block inside a module. This error message seems to be the one given any time write a program block where you shouldn't.
 
-**ncvlog: \*,PLMIUX:** You probably have a trailing comma in your named port list.
+**ncvlog: \*E,PLMIUX:** You probably have a trailing comma in your named port list.
+
+**ncvlog: \*E,E,EXPENM:** You might have a variable name/module name that begins with a number. 
 
 ### ncelab
 
