@@ -1,4 +1,4 @@
-I've found that most ncverilog messages are both obscure and ungoogle-able. Hopefully, writing these down will help.
+I've found that most ncverilog messages are both obscure and ungoogle-able. Hopefully, writing these down will help someone somewhere.
 
 ## Error message explanations
 
@@ -32,7 +32,9 @@ ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)]
 
 **ncvlog: \*E,PLMIUX:** You probably have a trailing comma in your named port list.
 
-**ncvlog: \*E,E,EXPENM:** You might have a variable name/module name that begins with a number. 
+**ncvlog: \*E,EXPENM:** You might have a variable name/module name that begins with a number. 
+
+**ncvlog: \*E,EXPNDL:** You accidentally wrote `wire input a` instead of `input wire a`.
 
 ### ncelab
 
